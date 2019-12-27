@@ -1,2 +1,2 @@
-# exam_sas_pdd_bot
+# Telegram bot
  Телеграм бот для проверки знаний ПДД
