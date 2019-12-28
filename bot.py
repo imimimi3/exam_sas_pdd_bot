@@ -42,7 +42,7 @@ def start(bot, update, user_data):
 def training(bot, update, user_data):
     # Метод посылает случайный вопрос из случайного билета пользователю
 
-    random_ticket = randint(0, 1)
+    random_ticket = randint(0, 2)
     random_question = randint(0, 19)
     is_exam = 0
     button_info = str(random_ticket) + ';' + str(random_question) + ';' + str(is_exam)
@@ -76,7 +76,7 @@ def training(bot, update, user_data):
 def exam(bot, update, user_data):
     # Метод посылает подряд 20 вопросов одного билета, а в конце посылает результат экзамена
 
-    random_ticket = randint(0, 1)
+    random_ticket = randint(0, 2)
     question_number = 0
     write_answers = 0
     is_exam = 1
