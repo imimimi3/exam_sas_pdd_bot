@@ -210,10 +210,7 @@ def answer_for_exam(bot, update):
                               text=db.get_question(ticket, question), reply_markup=keyboard)
 
     else:
-        keyboard = [
-            [InlineKeyboardButton(messages.MENU, callback_data='5')],
-            [InlineKeyboardButton(messages.AGAIN, callback_data='6')],
-        ]
+        keyboard = [[InlineKeyboardButton(messages.MENU, callback_data='5')]]
 
         if 20 - int(write_answers) <= 2:
             result = messages.PASSED + str(write_answers)
@@ -228,7 +225,6 @@ def answer_for_exam(bot, update):
         mis = Ex(id = query.message.chat.id , k_mis = (20 - int(write_answers)), ticket = ticket + 1)
         DB3Session.add(mis)
         DB3Session.commit()
-
 
 
 if __name__ == '__main__':
