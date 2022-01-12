@@ -1,5 +1,5 @@
 python-telegram-bot==11.1.0
-pipenv==2018.11.26
+pipenv==2022.1.8
 urllib3==1.25.7
 requests==2.22.0
 PySocks==1.7.1
